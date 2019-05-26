@@ -1,0 +1,286 @@
+* {
+  box-sizing:border-box;
+  font-family:Roboto;
+}
+
+header {
+  width: 50%;
+  height: 80px;
+  border:2px solid black;
+  margin:0 auto;
+}
+
+h1{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+.wrapper {
+  width: 542px;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.main__content{
+  display:flex;
+}
+
+.more {
+  width: 537px;
+  height: 60px;
+  border-radius:8px;
+  border:none;
+  display: flex;
+  justify-content: center;
+  background-color: #008CFF;
+  font-size:20px;
+  font-weight:bold;
+  color:#ffff;
+  cursor: pointer;
+}
+
+.card{
+  border: 1px solid #000; 
+  margin:10px 5px;
+  width: 170px;
+}
+
+.card__image-wrapper {
+  padding: 10px;
+}
+
+.card__image {
+  min-width: 100%;
+  border: 1px solid #000;
+}
+
+.pokemon_name{
+  text-align:center;
+  text-transform: capitalize;
+}
+
+.buttons_group{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 50%;
+  padding: 4px 10px;
+  border-radius:6px;
+  text-transform:capitalize;
+  font-size:16px; 
+  cursor:pointer;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+/* deteails card styles */
+.details{
+  width:250px;
+  border:2px solid #000;
+  padding: 10px;
+  position: fixed;
+   top:19%;
+  left:570px;
+}
+
+.details_table {
+  border:1px solid black;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details_table td { 
+  border:1px solid black;
+  text-transform:capitalize;
+} 
+
+.details_title {
+  text-align: center;
+  text-transform:capitalize;
+}
+/* details card styles */
+
+/* card buttons color styles */
+.dragon {
+  border: 1px solid #f43000;
+  background: rgb(250,153,5);
+  background: linear-gradient(180deg, rgba(250,153,5,0.9808298319327731) 0%, rgba(244,0,0,1) 100%);
+}
+
+.poison{
+  border:1px solid rgb(126, 5, 126);
+  background: rgb(161,135,175);
+  background: linear-gradient(180deg, rgba(161,135,175,1) 0%, rgba(126,5,126,1) 100%);
+}
+.ghost {
+  background: rgb(24,23,23);
+  background: linear-gradient(180deg, rgba(24,23,23,0.9808298319327731) 0%, rgba(142,74,214,1) 100%);
+  border: 1px solid #460f81;
+}
+.ice{
+  background: rgb(71,68,68);
+  background: linear-gradient(180deg, rgba(71,68,68,1) 0%, rgba(138,246,236,1) 100%);
+  border: 1px solid #393636;
+}
+
+.steel{
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(233,229,225,1) 100%);
+  border:1px solid lightgrey;
+}
+
+.grass{
+  background: rgb(172,216,151);
+  background: linear-gradient(180deg, rgba(172,216,151,1) 0%, rgba(0,128,0,1) 100%);
+  border:1px solid green;
+}
+.psychic{
+ background: rgb(242,196,25);
+  background: linear-gradient(180deg, rgba(242,196,25,1) 0%, rgba(238,135,8,1) 100%);
+  border:1px solid red;
+}
+
+.dark{
+  border:1px solid rgb(170,48,48);
+  background: rgb(170,48,48);
+  background: linear-gradient(180deg, rgba(170,48,48,1) 0%, rgba(15,15,15,1) 100%);
+}
+
+.shadow{
+  border:1px solid #464543;
+  background: rgb(88,86,84);
+  background: linear-gradient(180deg, rgba(88,86,84,0.9444152661064426) 0%, rgba(43,41,41,0.9528186274509804) 100%);
+}
+
+.rock{
+  background: rgb(73,71,66);
+  background: linear-gradient(180deg, rgba(73,71,66,1) 0%, rgba(148,145,141,1) 100%);
+  border:1px solid #585447;
+}
+
+.fire{
+  background: rgb(239,141,137);
+  background: linear-gradient(180deg, rgba(239,141,137,1) 0%, rgba(255,0,0,0.9444152661064426) 100%);
+  border:1px solid red;
+}
+
+.electric{
+  background: rgb(255,228,149);
+  background: linear-gradient(180deg, rgba(255,228,149,1) 0%, rgba(244,190,65,1) 100%);
+  border:1px solid #f4be41;
+}
+
+.water {
+ background: rgb(173,216,230);
+  background: linear-gradient(180deg, rgba(173,216,230,1) 0%, rgba(21,92,115,0.9752275910364145) 100%);
+  border:1px solid blue;
+}
+
+.bug {
+  background: rgb(97,227,70);
+  background: linear-gradient(180deg, rgba(97,227,70,1) 0%, rgba(21,115,23,0.9752275910364145) 100%);
+  border:1px solid rgb(4, 92, 19);
+}
+
+.ground {
+  background: rgb(203,121,7);
+  background: linear-gradient(180deg, rgba(203,121,7,1) 0%, rgba(71,52,5,0.9752275910364145) 100%);
+  border:1px solid rgb(182, 55, 55);
+}
+
+.fairy {
+  background: rgb(255,229,255);
+  background: linear-gradient(180deg, rgba(255,229,255,1) 0%, rgba(228,147,228,1) 100%);
+  border:1px solid lightsalmon;
+}
+
+.flying {
+  background: rgb(186,252,246);
+  background: linear-gradient(180deg, rgba(186,252,246,1) 0%, rgba(141,182,180,0) 100%);
+  border:1px solid rgb(141, 182, 180);
+}
+
+.fighting {
+  background: rgb(190,150,150);
+  background: linear-gradient(180deg, rgba(190,150,150,1) 0%, rgba(237,210,210,0.9528186274509804) 100%);
+  border:1px solid rgb(218, 157, 132);
+}
+
+.normal{
+  background: rgb(228,220,220);
+  background: linear-gradient(180deg, rgba(228,220,220,1) 0%, rgba(163,155,155,0.9528186274509804) 100%);
+  border:1px solid grey;
+}
+/* card buttons color styles ENDS*/
+
+/* media querry section */
+@media screen and (max-width: 835px) {
+  .wrapper{
+    width: 360px;
+  }
+
+ .details {
+   left:380px;
+   top:19%;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .wrapper{
+    width: 180px;
+  }
+  .details {
+   left:185px;
+   width: 205px;
+   top:19%;
+  }
+  .more{
+    width: 179px;
+  }
+}
+
+@media screen and (max-width: 396px){
+  header{
+    width: 100%;
+  }
+
+   .details {
+   left:185px;
+   width: 180px;
+  }
+}
+
+@media screen and (max-width: 370px){
+  .details_table {
+    font-size:13px;
+  }
+  .details{
+    width:157px;
+    left:145px
+  }
+  .btn{
+    padding:0;
+    width: 45%;
+    font-size:13px;
+  }
+
+  .card{
+    width:125px;
+    
+  }
+  .more{
+    width: 135px;
+  }
+}
+@media screen and (min-width: 1298px) {
+  .details{
+    top:16%;
+  }
+}
+/* media querry section */
